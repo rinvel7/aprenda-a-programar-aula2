@@ -16,7 +16,7 @@ if (a > 10) {
 } else {
     console.log("B");
 }
-//3 inprime B
+//3 inprime A
 if (a >= 10) {
     console.log("A");
 } else {
@@ -31,7 +31,7 @@ if (b == true) {
 }
 //5 imprime A
 
-if (b) {
+if (b) {//undefine, NaN, 0, "", null ->false
     console.log("A");
 } else {
     console.log("B");
