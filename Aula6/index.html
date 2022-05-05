@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+      <!--  <h1>Exercício IMC</h1>
+         <p>Resolva os exercícios a seguir alterando o arquivo script.js</p>
+        <ol>
+            <li>
+                Implemente na função 'IMC' o cálculo do número. 
+                <br>A fórmula é peso / (altura * altura).
+                <br>Não esqueça que a função IMC deve retornar esse valor.
+            </li>
+            <li>
+                De acordo com a tabela abaixo, implemente a lógica da função 
+                'faixaIMC' para, <br> recebendo o indice calculado no ex anterior 
+                como parametro, <br>retornar a faixa que a pessoa se encontra.
+            </li>
+        </ol>
+
+        <h2>Tabela IMC</h2>
+        <img src="img/IMC.png">
+
+        <h3>Exercício extra:</h3>
+        <p>Essa página não contém nenhuma estilização 
+            e como você pode vir tem diversas tags que não vimos em aula.
+            <br>Fique a vontade para explorar e tentar entender oque elas fazem.
+            Você pode consultar o https://www.w3schools.com/html/default.asp
+            para te ajudar.
+        </p>
+
+        <p>
+            Caso esteja confortável e queira se desafiar, crie um arquivo CSS nessa pasta
+            e modifique o design da página como julgar melhor.
+           <br> Não se esqueça de importar o arquivo css no Head da página conforme vimos em aula.
+        </p>
+
+        <h3>Calculadora de IMC</h3>
+        <form>
+            <label for="peso">Peso:</label>
+            <input type="text" id="peso" name="peso">
+            <label for="altura">Altura:</label>
+            <input type="text" id="altura" name="altura">
+            <input type="button" onclick="mostrarResultadoIMC()" value="calcular IMC">
+        </form>
+        <p id="resultado"></p> -->
+       <div class="calculador-imc">
+        <h2>Tabela IMC</h2>
+        <div class="calculador-imc-tabela">
+        <img src="img/IMC.png">
+        </div>
+
+        <img class="calculador-imc-img" src="https://media.istockphoto.com/photos/fat-men-are-exercising-by-lifting-weights-picture-id1152025275?b=1&k=6&m=1152025275&s=170667a&w=0&h=h33hI6zskGboPVIRazo8g8QNTjODJq4GHoE8LGw7Pdk=">
+        <form id="formulario" onsubmit="calcularIMC(); return false">
+          <label for="nome">Escrive seu nome:</label>
+          <input type="text" id="nome">
+          <br>
+          <label for="altura">Escrive sua ALTURA atual (cm):</label>
+          <input type="text" id="altura" required="required">
+          <br>
+          <label for="peso">Escrive sua PESO atual (kg):</label>
+          <input type="text" id="peso" required="required">
+          <br>
+          <button type="submit">Calcular IMC</button>
+          <p id="resultado"></p>
+        </form>
+    </div>
+    </body>
+</html>
